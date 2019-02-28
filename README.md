@@ -16,46 +16,32 @@ watubeplay-cli
 <!-- usage -->
 ```sh-session
 $ npm install -g watubeplay-cli
-$ watubeplay-cli COMMAND
+$ watube COMMAND
 running command...
-$ watubeplay-cli (-v|--version|version)
+$ watube (-v|--version|version)
 watubeplay-cli/0.0.1 darwin-x64 node-v8.15.0
-$ watubeplay-cli --help [COMMAND]
+$ watube --help [COMMAND]
 USAGE
-  $ watubeplay-cli COMMAND
+  $ watube COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`watubeplay-cli hello`](#watubeplay-cli-hello)
-* [`watubeplay-cli help [COMMAND]`](#watubeplay-cli-help-command)
+* [`watube help [COMMAND]`](#watube-help-command)
+* [`watube pause`](#watube-pause)
+* [`watube play`](#watube-play)
+* [`watube resume`](#watube-resume)
+* [`watube stop`](#watube-stop)
+* [`watube volume`](#watube-volume)
 
-## `watubeplay-cli hello`
+## `watube help [COMMAND]`
 
-Describe the command here
-
-```
-USAGE
-  $ watubeplay-cli hello
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
-```
-
-_See code: [src/commands/hello.js](https://github.com/the6thm0nth/watubeplay-cli/blob/v0.0.1/src/commands/hello.js)_
-
-## `watubeplay-cli help [COMMAND]`
-
-display help for watubeplay-cli
+display help for watube
 
 ```
 USAGE
-  $ watubeplay-cli help [COMMAND]
+  $ watube help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -65,4 +51,87 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
+
+## `watube pause`
+
+Pause Current Video
+
+```
+USAGE
+  $ watube pause
+
+DESCRIPTION
+  😘  >> How to Use <<
+     $ watube pause
+```
+
+_See code: [src/commands/pause.js](https://github.com/the6thm0nth/watubeplay-cli/blob/v0.0.1/src/commands/pause.js)_
+
+## `watube play`
+
+Play Youtube Video with ID
+
+```
+USAGE
+  $ watube play
+
+OPTIONS
+  -v, --value=value  Youtube ID
+
+DESCRIPTION
+  😘  >> How to Use <<
+     $ watube play -v 5vheNbQlsyU
+```
+
+_See code: [src/commands/play.js](https://github.com/the6thm0nth/watubeplay-cli/blob/v0.0.1/src/commands/play.js)_
+
+## `watube resume`
+
+Pause Current Video
+
+```
+USAGE
+  $ watube resume
+
+DESCRIPTION
+  😘  >> How to Use <<
+     $ watube pause
+```
+
+_See code: [src/commands/resume.js](https://github.com/the6thm0nth/watubeplay-cli/blob/v0.0.1/src/commands/resume.js)_
+
+## `watube stop`
+
+Stop Current Video
+
+```
+USAGE
+  $ watube stop
+
+DESCRIPTION
+  😘  >> How to Use <<
+     $ watube stop
+```
+
+_See code: [src/commands/stop.js](https://github.com/the6thm0nth/watubeplay-cli/blob/v0.0.1/src/commands/stop.js)_
+
+## `watube volume`
+
+Set Volume
+
+```
+USAGE
+  $ watube volume
+
+OPTIONS
+  -v, --value=value  Volume Value
+
+DESCRIPTION
+  😘  >> How to Use <<
+     $ watube volume -v 0
+     $ watube volume -v 50
+     $ watube volume -v 100
+```
+
+_See code: [src/commands/volume.js](https://github.com/the6thm0nth/watubeplay-cli/blob/v0.0.1/src/commands/volume.js)_
 <!-- commandsstop -->
