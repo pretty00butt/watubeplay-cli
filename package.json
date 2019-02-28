@@ -1,0 +1,48 @@
+{
+  "name": "watubeplay-cli",
+  "version": "0.0.1",
+  "author": "dane",
+  "bin": {
+    "watube": "./bin/run"
+  },
+  "bugs": "https://github.com/the6thm0nth/watubeplay-cli/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "ws": "^6.1.4"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "globby": "^8"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/the6thm0nth/watubeplay-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "watube",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "the6thm0nth/watubeplay-cli",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
