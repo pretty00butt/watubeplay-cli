@@ -1,10 +1,10 @@
 require("dotenv").config();
 
-const { WS_HOST, WS_PORT } = process.env;
+const { WATUBE_WS_HOST, WATUBE_WS_PORT } = process.env;
 
 module.exports = {
   socket: {
-    host: WS_HOST,
-    port: WS_PORT
+    host: WATUBE_WS_HOST,
+    port: WATUBE_WS_PORT
   }
 };
