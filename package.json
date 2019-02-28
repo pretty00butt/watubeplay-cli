@@ -10,6 +10,7 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
+    "dotenv": "^6.2.0",
     "ws": "^6.1.4"
   },
   "devDependencies": {
